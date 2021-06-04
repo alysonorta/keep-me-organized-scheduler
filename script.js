@@ -16,7 +16,7 @@ function compareTime () {
         if (currentTime === rowHour) {
             changeColor(row, "green");
         } else if ((currentTime < rowHour) && (currentTime > rowHour - 6)) {
-            changeColor(row, "lightblue");
+            changeColor(".present");
         } else if ((currentTime > rowHour) && (currentTime < rowHour + 6)) {
             changeColor(row, "pink");
         } else {
@@ -28,3 +28,5 @@ function compareTime () {
 function changeColor(element, color) {
     element.style.backgroundColor = color;
 }
+
+
